@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+    {% load static %}
+
+    {% block title %} View Appointments | ArtificialMinds {% endblock %}
+
+    {% block css %}
+    <link rel="stylesheet" type="text/css" href="../static/css/viewappointment.css">
+    {% endblock%}
+    {% block nav_home %} active {% endblock %}
+
+{% block content %}
+<div class="limiter">
+
+<section class="indent-1">
+    <!-- Section 1 --> 
+    <section>
+		<!--for demo wrap-->
+		<h1 style="margin-left: 20px;">Meeting Type: <strong>VIDEO</strong></h1>
+		<br>
+		<div class="tbl-header">
+		  <table cellpadding="0" cellspacing="0" border="0">
+			<thead>
+			  <tr>
+				<th style="width: 150px;">Counselor</th>
+				<th class="column3">Date</th>
+				<th style="width: 100px;">Time</th>
+				<th style="width: 70px;">Type</th>
+				<th style="width: 100px;">Status</th>	
+				<th class="column3">Action</th>	
+			  </tr>
+			</thead>
+		  </table>
+		</div>
+		<div class="tbl-content">
+		  <table cellpadding="0" cellspacing="0" border="0">
+			  <!--JUS, loop nlng from database. Example rana sa sud sa "td"-->
+			<tbody>
+				{% for qs in live_appointment %}
+				<tr>
+					<td style="width: 150px;">{{qs.meeting_counselor.firstname}} {{qs.meeting_counselor.lastname}}</td> <!--Status Request-->
+					<td class="column2">{{qs.meeting_date}}</td> <!--appointment id-->
+					<td style="width: 100px;">{{qs.meeting_time}}</td> <!--Type of Meetong-->
+					<td style="width: 70px;">{{qs.meeting_type}}</td> <!--Status Request-->
+					<td  style="width: 100px;">{{qs.meeting_status}}</td> <!--Type of Meetong-->
+					<td><button class="btn3" onclick="document.location='lobby/'">Start</button></td>
+				</tr>	
+			{% endfor %}			  
+			</tbody>
+		  </table>
+	</div>
+	</section>
+
+    <!-- Section 2 -->
+    <section style="margin-left: 150px;">
+		<h1 style="margin-left: 20px;">Meeting Type: <strong>CHAT</strong></h1>
+		<br>
+		<div class="tbl-header">
+			<table cellpadding="0" cellspacing="0" border="0" class="table2">
+				<thead>
+					<tr>
+						<th style="width: 150px;">Counselor</th>
+						<th class="column3">Date</th>
+						<th style="width: 100px;">Time</th>
+						<th style="width: 70px;">Type</th>
+						<th style="width: 100px;">Status</th>	
+						<th class="column3">Action</th>	
+					</tr>
+				</thead>
+			</table>
+			</div>
+			<div class="tbl-content">
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tbody>
+					{% for qs in chat_appointment %}
+					<tr>
+						<td style="width: 150px;">{{qs.meeting_counselor.firstname}} {{qs.meeting_counselor.lastname}}</td> <!--Status Request-->
+						<td class="column2">{{qs.meeting_date}}</td> <!--appointment id-->
+						<td style="width: 100px;">{{qs.meeting_time}}</td> <!--Type of Meetong-->
+						<td style="width: 70px;">{{qs.meeting_type}}</td> <!--Status Request-->
+						<td style="width: 100px;">{{qs.meeting_status}}</td> <!--Type of Meetong-->
+						<td><button class="btn3" onclick="document.location='lobby/'">Start</button></td>
+					</tr>	
+				{% endfor %}			  
+				</tbody>
+			</table>
+		</div>
+	</section>
+	
+</section>
+<script>
+	$(window).on("load resize ", function() {
+		var scrollWidth = $('.tbl-content').width() - $('.tbl-content table').width();
+		$('.tbl-header').css({'padding-right':scrollWidth});
+	}).resize();
+</script>
+
+
+<!--===============================================================================================-->	
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+{% endblock %}
+

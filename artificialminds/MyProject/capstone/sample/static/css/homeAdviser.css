@@ -1,0 +1,475 @@
+.indent-1 {
+  float: left;
+}
+.indent-1 section {
+  width: 40%; 
+  float: left;
+}
+
+table{
+  width:100%;
+  table-layout: fixed;
+}
+
+.tbl-header{
+  width: 600px;
+  background-image: linear-gradient(180deg, #002BDC, #0693E3);
+  border-radius: 5px 5px 0 0;
+  text-transform: uppercase;
+ }
+ 
+.tbl-content{  
+  font-weight:bold;
+  width: 600px;
+  height:400px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid #002BDC;
+  border-radius: 0 0 5px 5px;
+  text-transform: uppercase;
+}
+
+.tbl-header2{
+  width: 1100px;
+  background-image: linear-gradient(180deg, #002BDC, #0693E3);
+  border-radius: 5px 5px 0 0;
+ }
+ 
+.tbl-content2{ 
+  font-weight:bold;
+  width: 1100px;
+  height:400px;
+  overflow-x:auto;
+  margin-top: 0px;
+  border: 1px solid #002BDC;
+  border-radius: 0 0 5px 5px;
+}
+
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-size: 12px;
+  color: black;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+td button {
+  color: #002BDC;
+}
+
+
+section{
+  margin-left: 70px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #0693E3;
+  box-shadow: inset 0 0 6px #0693E3;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #0693E3; 
+  box-shadow: inset 0 0 6px #0693E3;
+}
+
+.btn {
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 90px;
+}
+
+.btn:hover {opacity: 1}
+
+.btn1 {
+  background-color: #f4511e;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;  
+  width: 90px;
+}
+
+.btn1:hover {opacity: 1}
+
+
+.btn2 {
+  background-color: #002BDC;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 28px;
+  text-align: center;
+  font-size: 12px;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn2:hover {opacity: 1}
+
+
+.btn3 {
+  background-color: #002BDC;
+  border: none;
+  border-radius: 5px;
+  width: 90px;
+  color: white;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn3:hover {opacity: 1}
+
+
+.btn4 {
+  background-color: #002BDC;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  color: white;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.btn4:hover {opacity: 1}
+
+
+.btn_yes{
+  border: 1.5px solid #04AA6D;;
+  border-radius: 20px;
+  color: #04AA6D;;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 80px;
+}
+
+.btn_yes:hover {
+  opacity: 1;
+  background-color: #04AA6D;
+  color: #fefefe;
+}
+
+
+.btn_no{
+  border: 1.5px solid #aa041a;
+  border-radius: 20px;
+  color: #aa041a;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 80px;
+}
+
+.btn_no:hover {
+  opacity: 1;
+  background-color: #aa041a;
+  color: #fefefe;
+}
+
+
+
+.btn_update{
+  background-color: #aa041a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 60px;
+}
+
+.btn_update:hover {opacity: 1}
+
+
+.btn_cancel{
+  background-color: #aa041a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 60px;
+}
+
+.btn_cancel:hover {opacity: 1}
+
+
+
+[id^=modal] {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+[id^=modal]:target {
+  display: block;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.popup__overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background: #000000b3;
+  pointer-events: none;
+}
+
+.popup__wrapper {
+  position: fixed;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup__wrapper1 {
+  position: fixed;
+  top: 41%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fefefe;
+  padding: 20px;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup__close {
+  position: absolute;
+  top: 16px;
+  right: 26px;
+}
+
+.popup__wrapper a.student_btn {
+  align-items: center; 
+  text-align: center; 
+  margin-left: 80px;
+  margin-top: 50px;
+  border: 2px solid #002BDC; 
+  background: white; 
+  border-radius: 50%;
+  padding-left: 50px; 
+  padding-right: 50px; 
+  padding-bottom: 25px; 
+  padding-top: 25px;
+}
+.popup__wrapper a.student_btn:hover{
+  box-shadow: 0px 0px 25px 0px #0693E3;
+}
+.popup__wrapper a.adviser_btn {
+  align-items: center; 
+  text-align: center; 
+  margin-top: 50px;
+  border: 2px solid #002BDC; 
+  background: white; 
+  border-radius: 50%;
+  padding-left: 50px; 
+  padding-right: 50px; 
+  padding-bottom: 25px; 
+  padding-top: 25px;
+}
+
+.popup__wrapper a.adviser_btn:hover{
+  box-shadow: 0px 0px 25px 0px #0693E3;
+} 
+
+.popup__wrapper h4{
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.popup__wrapper .date{
+  margin-top: 10px;
+  margin-left: 120px;
+  text-align: left;
+}
+.popup__wrapper .time{
+  margin-top: 10px;
+  margin-left: 120px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.popup__wrapper .date label{
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+  font-weight: 500;
+  text-transform: none;
+}
+
+.popup__wrapper .time label{
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+  font-weight: 500;
+  text-transform: none;
+}
+
+.popup__wrapper .date input{
+  margin-left: 12px;
+  width: 150px;
+}
+.popup__wrapper .time input{
+  margin-left: 10px;
+  width: 150px;
+}
+
+
+input[type="checkbox"] {
+	display:none;
+}
+input[type="checkbox"]:checked ~ .modal,
+input[type="checkbox"]:checked ~ .modal-background {
+	display: block;
+}
+.modal-background {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9998;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;	
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+.modal > p {
+	padding: 15px;
+    margin: 0;
+}
+.modal-header {
+	background-color: #f9f9f9;
+    border-bottom: 1px solid #dddddd;
+    box-sizing: border-box;
+    height: 50px;
+}
+.modal-header h3 {
+	margin: 0;
+    box-sizing: border-box;
+    padding-left: 15px;
+    line-height: 50px;
+    color: #4d4d4d;
+    font-size: 16px;
+    display: inline-block;
+}
+.modal-header label {
+	box-sizing: border-box;
+    border-left: 1px solid #dddddd;
+    float: right;
+    line-height: 50px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+.modal-header label:hover img {
+	opacity: 0.6;
+}
+/* below is optional, it is just an example for the blue button */
+.example-label {
+	box-sizing: border-box;
+    display: inline-block;
+    padding: 10px;
+    background-color: #375d91;
+    color: #f9f9f9;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.example-label:hover {
+	background-color: #3c669f;
+}
